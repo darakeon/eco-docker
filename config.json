@@ -1,0 +1,14 @@
+{
+    "image": "python:3.12.0-slim-bullseye",
+    "commands-mandatory": [
+        "apt-get update"
+    ],
+    "commands-to-decrease": [
+        "apt-get install -y python3-dev",
+        "pip install -r requirements.txt",
+        "pip install fastapi[standard]"
+    ],
+    "commands-to-test": [
+        "fastapi --help"
+    ]
+}
